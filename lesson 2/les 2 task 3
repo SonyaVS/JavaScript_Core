@@ -24,3 +24,6 @@ switch (password){
         alert('Welcome!');
     }
 }
+
+
+added something new 
