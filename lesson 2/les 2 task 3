@@ -1,0 +1,26 @@
+var login = prompt('Who\'s there?');
+
+switch (login) {
+    case 'Cancel':{
+        alert('Canceled');
+    }
+    case 'Other':{
+        alert('I don\'t know you');
+    }
+    case 'Admin':{
+        alert('Password?');
+    }
+}
+var password = prompt('Password');
+
+switch (password){
+    case 'Cancel':{
+        alert('Canceled');
+    }
+    case 'Other':{
+        alert('Wrong password');
+    }
+    case 'TheMaster':{
+        alert('Welcome!');
+    }
+}

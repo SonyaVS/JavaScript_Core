@@ -1,0 +1,18 @@
+var login = prompt('Who\'s there?');
+
+if (login == 'Cancel'){
+        alert('Canceled');
+} else if (login == 'Other'){
+        alert('I don\'t know you');
+} else if (login == 'Admin'){
+        alert('Password');
+}
+
+var password = prompt ('Password?');
+if (password == 'Cancel'){
+        alert('Canceled');
+} else if (password == 'Other'){
+        alert('Wrong password');
+} else if (password == 'TheMaster'){
+        alert('Welcome!');
+}
