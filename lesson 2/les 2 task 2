@@ -2,17 +2,21 @@ var login = prompt('Who\'s there?');
 
 if (login == 'Cancel'){
         alert('Canceled');
-} else if (login == 'Other'){
+}
+if (login == 'Other'){
         alert('I don\'t know you');
-} else if (login == 'Admin'){
+} 
+if (login == 'Admin'){
         alert('Password');
 }
 
 var password = prompt ('Password?');
 if (password == 'Cancel'){
         alert('Canceled');
-} else if (password == 'Other'){
+} 
+if (password == 'Other'){
         alert('Wrong password');
-} else if (password == 'TheMaster'){
+} 
+if (password == 'TheMaster'){
         alert('Welcome!');
 }
