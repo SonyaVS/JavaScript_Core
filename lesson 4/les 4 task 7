@@ -1,0 +1,8 @@
+function show(data){
+    console.log(data);
+}
+var a = 1;
+do{
+    a*=2;
+    show(a);
+}while (a<2097152)

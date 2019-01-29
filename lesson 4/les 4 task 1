@@ -1,0 +1,5 @@
+function show(data){
+    console.log(data);
+}
+var a = (prompt('Enter any number')<0)?'This\'s an odd number':'This\'s an even number';
+show(a);

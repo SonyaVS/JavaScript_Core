@@ -1,0 +1,15 @@
+function show(data){
+    console.log(data);
+}
+var m = prompt('enter any value');
+var n = prompt('enter any another value');
+var d = 10;
+
+var r1 = m% d;
+var r2 = n% d; 
+show(r1);
+show(r2);
+
+if (r2>r1){
+    show(r1);
+}

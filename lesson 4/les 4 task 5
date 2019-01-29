@@ -1,0 +1,28 @@
+function show(data){
+    console.log(data);
+}
+function example(){
+    var a = 2;
+    var b = 6;
+    var c = 5;
+    var x1;
+    var x2;
+    var d;
+    var dSqrt;
+    var res = new Array (1,2,3);
+    d=(b*b)-(4*a*c);
+    
+    if (d>=0){
+        dSqrt=Math.sqrt(d);
+        x1=(-b-dSqrt)/(2*a);
+        x2=(-b+dSqrt)/(2*a);
+        res[0]=d;
+        res[1]=x1;
+        res[2]=x2;
+        }
+    if (d<0){
+        show('No solutions');
+    }
+    show(res);
+}
+example();
