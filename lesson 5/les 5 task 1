@@ -1,0 +1,16 @@
+function show(data){
+    console.log(data);
+}
+
+var user = {
+    name:'ПИЛИП',
+    surname:'ШЕВЧЕНКО',
+    name:'СЕРГІЙ'
+}
+show(user.name);
+
+function deleteProperty(property, obj){
+    delete obj[property];
+    show(obj);
+}
+deleteProperty('name', user);

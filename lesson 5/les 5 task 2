@@ -1,0 +1,19 @@
+function show(data){
+    console.log(data);
+}
+
+var employeeSalaries;
+if (employeeSalaries = {
+        Petrenko: 1000,
+        Stepanyuk:1500,
+        Trofymchuk:1250,
+        Khromyk:1800
+})
+    show(employeeSalaries);
+
+else if (employeeSalaries = {}){
+    show('No data');
+}
+
+var suma = employeeSalaries.Khromyk+employeeSalaries.Petrenko+employeeSalaries.Stepanyuk+employeeSalaries.Trofymchuk;
+show(suma);
