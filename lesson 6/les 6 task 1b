@@ -1,0 +1,1 @@
+function checkAge(age) {age>18 return true || 'Do You have a permission?' }
