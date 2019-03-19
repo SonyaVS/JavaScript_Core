@@ -1,0 +1,24 @@
+function show(data){
+    console.log(data);
+}
+
+function Robots(name){
+    this.work = function() {
+        show('Я' +name)
+    };
+}
+   
+var Robot = new Robots(' Robot - я просто працюю');
+
+var CoffeeRobot = new Robots(' CoffeeRobot - я варю каву');
+
+var RobotDancer = new Robots(' RobotDancer - я просто танцюю');
+
+var RobotCooker = new Robots(' RobotCooker - я просто готую');
+
+
+Robot.work();
+CoffeeRobot.work();
+RobotDancer.work();
+RobotCooker.work();
+
