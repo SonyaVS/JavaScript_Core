@@ -1,0 +1,61 @@
+function show(data){
+    console.log(data);
+}
+
+function Employee(monthSalary, hourSalary){
+    this.monthSalary = monthSalary;
+    this.hourSalary = hourSalary;
+    
+    this.setMSalary = function (salary1){
+        monthSalary = salary1; 
+    }
+    this.setHSalary = function(salary2){
+        hourSalary = salary2;
+    }
+    
+    this.getSalary = function(){
+        return (monthSalary, hourSalary);
+    }
+}
+
+Employee.prototype.getData = function(){
+    show('Employee(monthSalary = '+this.monthSalary()+' , hourSalary = '+this.hourSalary+')');
+}
+
+function Employee_1(mSalary, hSalary){
+    this.mSalary = mSalary;
+    this.hSalary = hSalary;
+}
+
+Employee_1.prototype = new Employee();
+
+Employee_1.prototype.getData = function(){
+    show( 'Employee_1(monthSalary = '+this.mSalary+' , hourSalary = '+this.hSalary+')');
+}
+
+var employee_1 = new Employee_1(2000, 100);
+employee_1.setMSalary = 2000;
+employee_1.setHSalary = 100;
+employee_1.getData();
+
+function Employee_2(m_Salary, h_Salary){
+    this.m_Salary = m_Salary;
+    this.h_Salary = h_Salary;
+}
+Employee_2.prototype = new Employee();
+
+Employee_2.prototype.getData = function(){
+    show( ' Employee_2(monthSalary = '+this.m_Salary+' , hourSalary = '+this.h_Salary+')');
+}
+
+var employee_2 = new Employee_1(1200, 130);
+employee_2.setMSalary = 1200;
+employee_2.setHSalary = 130;
+employee_2.getData();
+
+var arrayOfEmployees = [Employee, Employee_1, Employee_2];
+
+arrayOfEmployees.forEach(function (employee_1, employee_2){
+    employee_1.getData();
+    employee_2.getData();
+});

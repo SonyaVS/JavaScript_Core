@@ -1,0 +1,70 @@
+function show(data){
+    console.log(data);
+}
+
+function Car(colour, material, size){
+    var helm = new Helm(material);
+    var wheel = new Wheel(size);
+    var body = new Body(colour);
+    
+    
+    this.change = function(proportion){
+        helm.changeSize(proportion);
+    }
+    this.Size = function(){
+        show(helm.showDiameter());
+    }
+    
+    
+    this.wheel = function(air){
+        wheel.check(air);
+    }
+    this.Pressure = function(){
+        show(wheel.check());
+    }
+    
+    
+    this.body = function(pick_up){
+        body.TypeOf(pick_up);
+    }
+    this.Type = function(){
+        show(body.TypeOf());
+    }
+}
+
+function Helm(diameter){
+    this.diameter = diameter;
+    this.changeSize = function(a){
+        this.diameter = a;
+    }
+    this.showDiameter = function(){
+        return diameter;
+    }
+}
+
+function Wheel(pressure){
+    this.pressure = pressure;
+    this.check = function(b){
+        this.pressure = b;
+    }
+    this.showPressure = function(){
+        return pressure;
+    }
+}
+
+function Body(type){
+    this.type = type;
+    this.TypeOf = function(c){
+        this.type = c;
+    }
+    this.showType = function(){
+        return type;
+    }
+}
+
+
+
+var car = new Car(40);
+car.Size();
+car.Type();
+car.Pressure();
