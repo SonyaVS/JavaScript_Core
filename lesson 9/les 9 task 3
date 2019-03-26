@@ -1,0 +1,27 @@
+function show(data){
+    console.log(data);
+}
+
+var arr = ['valuee', 'value', 'valueeee'];
+function find(arr){
+    
+    for (var i=0; i<arr.length; i++){
+        if (i == 'value'){
+            show(arr.indexOf('value'))
+        }
+        else if (i !== 'value'){
+            show(-1);
+        }
+    }
+}
+console.log(find(arr));
+
+
+//
+
+var aarr = ['valuee', 'value', 'valueeee'];
+var c = aarr;
+
+if (c.includes('value')){
+    show(aarr.indexOf('value'));
+}

@@ -1,0 +1,16 @@
+function show(data){
+    console.log(data);
+}
+
+var styles = ['Jazz', 'Blues'];
+styles.push('Rock-n-Roll');
+show(styles);
+
+styles.splice(styles.length-2,1,'Classic');
+show(styles);
+
+styles.shift();
+show(styles);
+
+styles.unshift('Rap','Reggi');
+show(styles);

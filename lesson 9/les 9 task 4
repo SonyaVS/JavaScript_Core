@@ -1,0 +1,13 @@
+function show(data){
+    console.log(data);
+}
+
+
+function filterRange(array){
+    var c = [];
+    var array = ['z', 'a', 'c', 'v', 'b'];
+    for (var i='a'; i<'b'; i++){
+        c.push(array[i]);
+    }
+}
+console.log(c);
