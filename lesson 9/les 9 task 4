@@ -1,0 +1,13 @@
+function filterRange(array, a, b){
+var c = [];
+	for (var i=0; i<array.length; i++){
+	   for (var j=0; j<b; j++){
+            if(array[i] == j) {
+				return c.push(array[i]);
+            }
+        }
+    }
+return array;
+}
+var s = [1, 2, 3, 4, 5, 6];
+filterRange(s, 2, 5);

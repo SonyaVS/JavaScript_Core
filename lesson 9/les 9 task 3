@@ -1,0 +1,12 @@
+function find(arr, value) {
+    if(Array.isArray(arr))
+        for(var i=0; i<arr.length; i++){
+            if(arr[i] == value){
+                return i;
+            }
+        }
+    return -1;
+}
+
+var array = [1,2,3,4];
+find(array, 4)

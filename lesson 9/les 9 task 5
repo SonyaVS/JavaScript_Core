@@ -1,0 +1,16 @@
+function show(data){
+    console.log(data);
+}
+
+
+function camelize(str){
+    var text = str.split('-');
+        console.log(text);
+    
+    for( var i=0; i<text.length; i++){
+        text[i].toString().toUpperCase();
+    }
+    return text.join('');
+}
+
+show(camelize('my-short-string'));

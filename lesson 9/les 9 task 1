@@ -1,0 +1,2 @@
+var products = [];
+console.log(products.length-1);
