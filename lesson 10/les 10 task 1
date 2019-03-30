@@ -1,0 +1,68 @@
+function show(data){
+    console.log(data);
+}
+
+var arr = [];
+arr.push({
+    name: 'Nazar',
+    sex: 'male',
+    age: 15
+});
+arr.push({
+    name: 'Alla',
+    sex: 'female',
+    age: 110
+});
+arr.push({
+    name: 'Stepan',
+    sex: 'male',
+    age: 14
+});
+arr.push({
+    name: 'Solomia',
+    sex: 'female',
+    age: 3
+});
+arr.push({
+    name: 'Maria',
+    sex: 'female',
+    age: 92
+});
+arr.forEach(show);
+
+var filtering = arr.filter(function(a){
+    return a.age < 21 && a.sex == 'male'
+});
+   
+show(filtering);
+
+var mapping = filtering.map(function(a){
+   return  (arr.push({
+        yearsUnderAge : 21 - a.age
+    }))
+});
+show(mapping);
+
+
+function sortByAge(obj1, obj2){
+    return obj1.age - obj2.age;
+}
+
+
+function sortByName(obj1, obj2){
+        var obj1Name = obj1.name;
+        var obj2Name = obj2.name;
+        if (obj1Name > obj2Name){
+            return 1;
+        }else if (obj1Name < obj2Name){
+            return -1;
+        }
+        return 0;
+    }
+
+
+arr.sort(sortByAge);
+arr.forEach(show);
+
+arr.sort(sortByName);
+arr.forEach(show);
