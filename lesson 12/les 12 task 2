@@ -1,0 +1,28 @@
+function math (num1, num2, operation){
+    if (operation === '+'){
+        console.log(num1+num2)
+        }
+    if (operation === '-'){
+        console.log(num1-num2);
+        }
+    if (operation === '*'){
+        console.log(num1*num2);
+        }
+    if (operation === '/') {
+        try {
+            if (num2 === 0){
+        throw Error ('Can not be divided into zero');
+            }
+        console.log(num1/num2);
+        }catch (e){
+            if (e.name === 'Error'){
+                console.log(e);
+            }else {
+                throw e;
+            }
+        }
+    }
+}
+math(2, 0, '/');
+
+        

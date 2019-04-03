@@ -1,0 +1,16 @@
+function show(data){
+    console.log(data);
+}
+var map = new Map();
+
+map.set('petro', {name:'Petro', age: 33});
+map.set('oksana', {name: 'Oksana', age: 27});
+map.set('liza', {name: 'Liza', age: 8});
+map.set('vasyl', {name: 'Vasyl', age: 12});
+map.set('anna', {name:'Anna', age: 33});
+
+function a (mapp){
+    map.forEach(mapp => show(mapp));
+    show();
+}
+a(map);
